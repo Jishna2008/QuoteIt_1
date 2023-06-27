@@ -4,8 +4,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 import LoginScreen from "./screens/Login";
 import RegisterScreen from "./screens/Register";
 import ThankYou from "./screens/ThanKYou";
-
-
+import Intro from "./screens/Intro";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import DrawerNavigator from "./navigator/DrawerNavigator";
 import  firebase from "firebase";
@@ -22,11 +22,11 @@ const Stack = createStackNavigator();
 
 const StackNav = () => {
   return(
-  <Stack.Navigator initialRouteName="Dashboard"  screenOptions={{
+  <Stack.Navigator initialRouteName="Intro"  screenOptions={{
     headerShown: false,
     gestureEnabled: false
   }}>
-   
+    <Stack.Screen name="Intro" component={Intro}/>  
     <Stack.Screen name="Login" component={LoginScreen}/>
     <Stack.Screen name="Register" component={RegisterScreen}/>
     <Stack.Screen name="ThankYou" component={ThankYou}/>

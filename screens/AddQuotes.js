@@ -253,7 +253,7 @@ const styles = StyleSheet.create({
     borderRadius:RFValue(80),
     paddingLeft:20,
     fontSize:RFValue(30),
-    fontFamily:"Freestyle Script",
+    fontFamily:"NatureBeauty",
     marginTop:RFValue(20)
   },
    buttonText:{

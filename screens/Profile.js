@@ -146,6 +146,6 @@ const styles =StyleSheet.create({
   name:{
     color:"white",
     
-    fontFamily:"Freestyle Script",fontSize:RFValue(42)
+    fontFamily:"NatureBeauty",fontSize:RFValue(42)
   }
 })

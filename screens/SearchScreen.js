@@ -80,6 +80,7 @@ async componentDidMount() {
         <Image source={{ uri: item.image }} style={styles.qImg} />
         <Text style={styles.qText}>Quote: {item.quote}</Text>
         <Text style={[styles.qText, { marginTop: RFValue(25) }]}>Author: {item.author}</Text>
+        <TouchableOpacity><Text style={styles.qText}>Add to Favorites</Text></TouchableOpacity>
       </TouchableOpacity>
     );
   };
@@ -94,6 +95,7 @@ async componentDidMount() {
     if (!this.state.fontLoaded) {
       return <AppLoading />;
     } else {
+      if(!this.state.items){}else{
       SplashScreen.hideAsync();
       return (
         <View style={styles.container}>
@@ -141,7 +143,7 @@ async componentDidMount() {
           
         </View>
       );
-    }
+    }}
   }
 }
 
@@ -196,6 +198,7 @@ const styles =StyleSheet.create({
     alignItems:"center",
     border:"dotted",
     marginBottom:35,
+    width:RFValue(450)
    
   },
   qText:{

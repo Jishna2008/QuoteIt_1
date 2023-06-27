@@ -122,17 +122,17 @@ const style=StyleSheet.create({
   bg:{
    borderColor: '#301934',
     borderWidth: 5,
-    width:RFValue(362),
-    height:RFValue(280),
+    width:RFValue(432),
+    height:RFValue(250),
     boarderColor:"purple",
-    top:RFValue(-100),
+    top:RFValue(-40),
     left:-1
   },
   icon:{
     resizeMode:"contain",
     width:RFValue(100),
     height:RFValue(100),
-   top:RFValue(-150),
+   top:RFValue(-100),
     borderColor: '#301934',
     borderWidth: 5,
     borderRadius:200
@@ -142,7 +142,8 @@ const style=StyleSheet.create({
     color:"#A89D8C",
     fontFamily:"NatureBeauty",
     fontSize:RFValue(40),
-    marginTop:-150
+    marginTop:-150,
+    marginBottom:RFValue(80)
   },
   input:{
     backgroundColor:"#FAF085",
@@ -151,13 +152,13 @@ const style=StyleSheet.create({
     borderRadius:RFValue(80),
     marginTop:-80,
     paddingLeft:20,
-    fontSize:RFValue(30),
-    fontFamily:"Freestyle Script"
+    fontSize:RFValue(20),
+    
   },
   logB:{
     backgroundColor:"#A89D8C",
     marginTop:RFValue(40),
-    height:RFValue(50),
+    height:RFValue(80),
     alignItems:"center",
     justifyContent:"center",
     borderRadius:RFValue(80),
@@ -165,9 +166,11 @@ const style=StyleSheet.create({
     marginLeft:RFValue(50)
   },
   textB:{
-    color:"#301934",
+    color:"white",
     fontFamily:"NatureBeauty",
-    fontSize:RFValue(30)
+    fontSize:RFValue(30),
+    alignContent:"center",
+    paddingBottom:RFValue(20)
   },
   regB:{
     fontSize:RFValue(20),
